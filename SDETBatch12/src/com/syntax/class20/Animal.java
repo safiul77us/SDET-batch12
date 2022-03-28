@@ -1,0 +1,14 @@
+package com.syntax.class20;
+
+public class Animal {
+    String name;
+    int age;
+    String color;
+    double weight;
+    void sleep(){
+        System.out.println(name + " Sleeping");
+    }
+    void eat(){
+        System.out.println(name + " eating");
+    }
+}
