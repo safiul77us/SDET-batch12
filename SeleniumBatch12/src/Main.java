@@ -4,31 +4,23 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
+import java.util.Set;
 
 public class Main {
-    public static void main(String[] args) throws InterruptedException {
+        public static String url = "http://syntaxprojects.com/index.php";
 
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        public static void main(String[] args) throws InterruptedException {
+            System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+            WebDriver driver = new ChromeDriver();
+            driver.get(url);
 
-        driver.get("http://ebay.com");
-        List<WebElement> allLinks = driver.findElements(By.tagName("a"));
-        System.out.println("Number of links " + allLinks.size());
+            String title =  driver.getTitle();
+            String mainPageHandel =  driver.getWindowHandle();
+            Set<String> allHandles = driver.getWindowHandles();
 
-//        for (WebElement link : allLinks) {
-//            String linkText = link.getText();
-//            if (!linkText.isEmpty()) {
-//                System.out.println(linkText);
-//            }
-//        }
+            System.out.println(title);
+            System.out.println(mainPageHandel);
 
-        for(WebElement link: allLinks) {
-            String linkText = link.getText();
-            String fullLink = link.getAttribute("href");
-            if(!linkText.isEmpty()) {
-                System.out.println(linkText + "    " + fullLink);
-            }
-        }
     }
 }
 
