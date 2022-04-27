@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FromEclips/FromEclips.iml" filepath="$PROJECT_DIR$/FromEclips/FromEclips.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SDETBatch12.iml" filepath="$PROJECT_DIR$/SDETBatch12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SDETBatch12-Java.iml" filepath="$PROJECT_DIR$/SDETBatch12-Java.iml" />
     </modules>
   </component>
 </project>

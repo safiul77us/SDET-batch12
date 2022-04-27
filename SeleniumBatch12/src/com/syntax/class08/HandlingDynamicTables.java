@@ -13,10 +13,10 @@ import java.util.Set;
 
 public class HandlingDynamicTables {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe" );
-        WebDriver driver = new ChromeDriver();
-//        System.setProperty("webdriver.gecko.driver", "drivers/geckodriver.exe" );
-//        WebDriver driver = new FirefoxDriver();
+//        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe" );
+//        WebDriver driver = new ChromeDriver();
+        System.setProperty("webdriver.gecko.driver", "drivers/geckodriver.exe" );
+        WebDriver driver = new FirefoxDriver();
 
         driver.get("http://secure.smartbearsoftware.com/samples/testcomplete11/WebOrders/login.aspx");
 
@@ -34,7 +34,7 @@ public class HandlingDynamicTables {
 
             if(rowText.contains("Bob Feather")){
                 List<WebElement> checkboxes = driver.findElements(By.xpath("//table[@class = 'SampleTable']/tbody/tr/td[1]"));
-                checkboxes.get(i).click(); //because we're starting in at index 1. so taking a step back
+                checkboxes.get(i-1).click(); //because we're starting in at index 1 to skip header. so taking a step back
             }
         }
 

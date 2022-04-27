@@ -2,25 +2,42 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
-        public static String url = "http://syntaxprojects.com/index.php";
 
-        public static void main(String[] args) throws InterruptedException {
-            System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-            WebDriver driver = new ChromeDriver();
-            driver.get(url);
+    public static void main(String[] args) throws InterruptedException {
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
 
-            String title =  driver.getTitle();
-            String mainPageHandel =  driver.getWindowHandle();
-            Set<String> allHandles = driver.getWindowHandles();
+        driver.get("http://ebay.com");
 
-            System.out.println(title);
-            System.out.println(mainPageHandel);
+        List<WebElement> allLinks = driver.findElements(By.tagName("a"));
+        System.out.println("Number of links " + allLinks.size());
+
+        //getting all non empty link
+//        for (WebElement link : allLinks) {
+//            String linkText = link.getText();
+//            if (!linkText.isEmpty()) {
+//                System.out.println(linkText);
+//            }
+//        }
+
+        // getting all link of href
+        for (WebElement link : allLinks) {
+            String linkText = link.getText();
+            String fullLink = link.getAttribute("href");
+            if (!linkText.isEmpty()) {
+                System.out.println(linkText + "    " + fullLink);
+            }
+        }
 
     }
 }
+
+
 

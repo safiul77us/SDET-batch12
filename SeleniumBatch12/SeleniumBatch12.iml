@@ -10,16 +10,6 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://C:/WebDriver" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://C:/WebDriver" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="file://C:/WebDriver/selenium-java-3.141.59" />
           <root url="file://C:/WebDriver/selenium-java-3.141.59/libs" />
           <root url="jar://C:/WebDriver/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar!/" />
@@ -39,6 +29,16 @@
         <jarDirectory url="file://C:/WebDriver/selenium-java-3.141.59/libs" recursive="false" />
         <jarDirectory url="file://C:/WebDriver/WebDriverManager" recursive="false" />
         <jarDirectory url="file://C:/WebDriver/selenium-java-3.141.59" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://C:/WebDriver" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://C:/WebDriver" recursive="false" />
       </library>
     </orderEntry>
   </component>

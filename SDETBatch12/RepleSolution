@@ -1,0 +1,3723 @@
+public static void main(String[] args)
+
+---
+
+1 Creating Variables and Printing Them
+
+```
+public static void main(String[] args){
+boolean isTrue, isFalse;
+isTrue = true;
+isFalse = false;
+System.out.println(isTrue);
+System.out.println(isFalse);
+
+  }
+```
+
+2
+int age;
+age = 4;
+System.out.println(age);
+
+3
+ boolean myBoolean = false;
+ double money = 99999.99;
+
+System.out.print(money +""+ myBoolean);
+
+4
+    System.out.println("*");
+    System.out.println("**");
+    System.out.println("***");
+    System.out.println("##");
+    System.out.println("#");
+
+5
+    String name = "Chen";
+    int age = 50;
+    int iq = age;
+
+    System.out.println(name);
+    System.out.print(age+""+iq);
+
+    System.out.print(age);
+    System.out.print(iq);
+
+---
+6 String concatenation:
+
+   String fName = "John";
+   String lName = "Smith";
+   System.out.println(fName + " " + lName);
+
+
+7
+String concatenation:
+String lang = "Java";
+String prog = "programming language";
+System.out.println(lang + " " + "is the #1 " + prog);
+
+String var1 = "Java";
+String var2 = "programming language";
+System.out.println(var1 + " is the #1" + " " + var2);
+
+
+8 String concatenation:
+
+   String s1 = "syntaxtechs";
+    String s2 = ".com";
+    System.out.println(s1 + s2);
+String var1="syntaxtechs";
+String var2=".com";
+System.out.println(var1+var2);
+
+---
+
+9 Arithmetic Operaiton:
+
+   float d = 8.2f;
+    float dd = d * d;
+    System.out.println("The multiplication of " + d + " with itself is equal to " + dd);
+
+float var1=8.2f;
+ float var2=var1*var1;
+ System.out.println("The multiplication of"+" "+var1+" with itself is equal to "+var2);
+
+10
+   int num1 = 200;
+    int num2 = 100;
+
+    int add = (num1 + num2);
+    int sub = (num1 - num2);
+    int mul = (num1 * num2);
+    int div = (num1 / num2);
+
+    System.out.println(add);
+    System.out.println(sub);
+    System.out.println(mul);
+    System.out.println(div);
+
+
+       int num1=200;
+        int num2=100;
+        System.out.println(num1+num2);
+        System.out.println(num1-num2);
+        System.out.println(num1*num2);
+        System.out.println(num1/num2);
+
+------------
+11
+   //A = l × w
+    //P = (L + W) × 2
+
+
+    int width = 5;
+    int height = 8;
+    int perimeter =(width + height) * 2;
+    int area = width * height;
+
+    System.out.println("The perimeter of a rectangle with width "+ width + " and height " + height + " is equals to " + perimeter + " and the area equals to " + area);
+
+
+
+       int rWidth = 5;
+        int rHeight = 8;
+        int perimeter = rHeight + rHeight + rWidth + rWidth;
+        int area = rWidth * rHeight;
+        System.out.println("The perimeter of a rectangle with width"
+        + " " + rWidth + " and height" + " " + rHeight +
+        " is equals to" + " " + perimeter + " and the area equals to"
+	+ " " + area);
+
+ --------
+ 12
+ int num1 = 3;
+    int num2 = 7;
+    int num3 = 5;
+    int num4 = 1;
+
+    //start coding here
+    int add = num1 = num2;
+    int div = add / 3;
+    int sub = div - num4;
+
+    System.out.println("The result of arithmetic operations is equal to " + sub);
+
+
+
+        int num1 = 3;
+        int num2 = 7;
+        int num3 = 5;
+        int num4 = 1;
+        //start coding here
+        int addNum=num1+num2;
+        int divNum=addNum/num3;
+        int subNum=divNum-num4;
+        System.out.println("The result of arithmetic operations is equal to "+" "+subNum);
+
+--------------------------
+13
+   int myNumber = 4;
+    int stepOne = myNumber * myNumber;
+    int stepTwo = stepOne + myNumber;
+    int stepThree = stepTwo / myNumber;
+    int stepFour = stepThree + 17;
+    int stepFive = stepFour - myNumber;
+    int stepSix = stepFive /6;
+    System.out.println("The magic number is " + stepSix + "!");
+
+
+------------
+14
+  int num1 = 5;
+    int num2 = 4;
+    int num3 = 3;
+
+    int num4 = 7;
+    int num5 = 10;
+    int num6 = 5;
+
+    //start coding here
+    int result1 = (num1 + num2)- num3;
+    int result2 = (num4 * num5) / num6;
+    int mod = result2/result1;
+
+    System.out.println(result2 + " modded by " + result1 + " is " + mod);
+
+
+ ----------
+ 15 Print the results of 14 mod 2.
+
+   int mod = 14 %2;
+    System.out.println(mod);
+
+ -------
+ 16 Print the result of 29 mod 4
+
+int a = 29 % 4;
+    System.out.println(a);
+
+-----------
+17 Print result of -21 mod 4?
+
+ int b = (-21 % 4);
+    System.out.println(b);
+
+---
+
+Type casting
+
+18 Write a program to convert double 500.4444 into long.
+  double d = 500.4444;
+    int i = (int)d;
+    System.out.println(i);
+
+-----------
+19 Write a program to convert double 100.50 into int type
+
+   double d = 100.50;
+    int i = (int)d;
+    System.out.println(i);
+
+
+--------------------------
+Scanner Class:
+
+20 Write a program that takes user's first name and last name and prints in console
+
+    Scanner scan = new Scanner(System.in);
+
+    System.out.println("Please Enter First Name");
+    String fName = scan.nextLine();
+
+    System.out.println("Please Enter Last Name");
+    String lName = scan.nextLine();
+
+    System.out.println(fName + " " + lName);
+
+
+----------------------
+21 Write a program that asks the user's age: "Enter your age "
+Then display it by adding 10 (i.e age + 10) in your final output.
+
+    Scanner scan = new Scanner(System.in);
+
+    System.out.println("Enter your age");
+    int age = scan.nextInt();
+
+    System.out.println("Your age after 10 years is " + (age + 10));
+
+-------------------
+22 Write a program to take user name, age and mobile number
+
+    Scanner scan = new Scanner(System.in);
+
+    System.out.println("Enter your name");
+    String name = scan.nextLine();
+
+    System.out.println("Enter your mobile number");
+    String phone = scan.nextLine();
+
+    System.out.println("Enter your age");
+    int age = scan.nextInt();
+
+
+    System.out.println("Your name is " + name +
+    ", your age is " + age + " and your mobile number is " + phone);
+
+
+---
+23
+If statement:
+
+```
+  Scanner scan = new Scanner(System.in);
+  System.out.println("Input the boolean value");
+  Boolean bool = scan.nextBoolean();
+  if (bool){
+    System.out.println("The value is true");
+  }else {
+    System.out.println("The value is false");
+  }
+```
+
+
+----------------
+24 Write a program that takes a user's name and prints it.
+
+```
+Scanner scan = new Scanner(System.in);
+System.out.println("Hello, please enter your name");
+String name = scan.nextLine();
+System.out.println("Your name is " + name);
+```
+
+---
+25
+```
+    Scanner inp = new Scanner(System.in);
+    System.out.print("In:");
+    int num = inp.nextInt();
+
+    if (num > 0){
+      System.out.println(num + " is positive");
+    }else if (num < 0){
+      System.out.println(num + " is negative");
+    }else{
+      System.out.println("Entered number is equals to 0");
+    }
+```
+
+---
+26
+If name is equal to "Chen", print "teacher"
+For any other input, print "student"
+
+```
+Scanner inp = new Scanner(System.in);
+    System.out.print("In:");
+    String name = inp.nextLine();
+
+    if (name.equalsIgnoreCase("Chen")) {
+      System.out.println("teacher");
+    }else{
+      System.out.println("student");
+    }
+```
+
+
+------------
+27
+A person who is eligible to vote must be older or equal to 18 years old and the program will show "You are eligible to vote".
+Otherwise, the program will show "You are not eligible to vote".
+
+```
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Please enter your age");
+    int age = scan.nextInt();
+    if (age >= 18){
+      System.out.println("You are eligible to vote");
+    }else{
+      System.out.println("You are not eligible to vote");
+    }
+```
+
+---
+28
+Write a program to take values of length and width from the user.
+Based on value define whether the shape is a square or rectangle.
+
+```
+  Scanner scan = new Scanner(System.in);
+  System.out.println("Please enter the length");
+  int length = scan.nextInt();
+  System.out.println("Please enter the width");
+  int width = scan.nextInt();
+  if (length == width) {
+    System.out.println("The shape of your object is square");
+  }else{
+    System.out.println("The shape of your object is rectangle");
+  }
+```
+
+---------------------
+29
+If the result of a multiplication is positive print true, otherwise print false.
+
+```
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Please enter first number");
+    int num1 = scan.nextInt();
+    System.out.println("Please enter second number");
+    int num2 = scan.nextInt();
+    int mul = (num1 * num2);
+    if (mul > 0) {
+      System.out.println("true");
+    }else{
+      System.out.println("false");
+    }
+```
+
+---
+30  Write a program to take the month number from a user.
+
+```
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Please enter month number");
+    int monthNumber = scan.nextInt();
+
+    if (monthNumber == 1) {
+      System.out.println("January");
+    }else if(monthNumber == 2){
+      System.out.println("February");
+    }else if(monthNumber == 3){
+      System.out.println("March");
+    }else if(monthNumber == 4){
+      System.out.println("April");
+    }else if(monthNumber == 5){
+      System.out.println("May");
+    }else if(monthNumber == 6){
+      System.out.println("June");
+    }else if(monthNumber == 7){
+      System.out.println("July");
+    }else if(monthNumber == 8){
+      System.out.println("August");
+    }else if(monthNumber == 9){
+      System.out.println("September");
+    }else if(monthNumber == 10){
+      System.out.println("October");
+    }else if(monthNumber == 11){
+      System.out.println("November");
+    }else if(monthNumber == 12){
+      System.out.println("December");
+    }else{
+      System.out.println("Invalid");
+    }
+```
+
+---
+31
+
+Scanner scan = new Scanner(System.in);
+
+  System.out.println("Is it sunny outside?");
+  boolean isSunny = scan.nextBoolean();
+
+  if (isSunny){
+    System.out.println("It is a sunny day, I should go somewhere!");
+
+    System.out.println("What is the temperature outside?");
+    int temp = scan.nextInt();
+    if (temp > 85){
+      System.out.println("I am going to the beach!");
+    }else{
+      System.out.println("I am going to the park!");
+    }
+  }else{
+    System.out.println("I stay home and practice Java!");
+  }
+
+
+---
+
+32
+If age is above 25, then check if a user entered F then the output should be "Woman" otherwise it should say "Man"
+If age is below 25, then check if a user entered F then the output should be "Girl" otherwise it should say "Boy"
+
+
+```
+Scanner in = new Scanner(System.in);
+        System.out.println("Please enter your gender: M or F");
+        String sex = in.nextLine();
+
+        System.out.println("Please enter your age");
+        int age = in.nextInt();
+        if (sex.equalsIgnoreCase("M") || sex.equalsIgnoreCase("m")) {
+            if (age > 25) {
+              System.out.println("Man");
+            }else {
+              System.out.println("Boy");
+            }
+        } else if (sex.equalsIgnoreCase("F") || sex.equalsIgnoreCase("f")) {
+          if (age > 25) {
+              System.out.println("Woman");
+            }else {
+              System.out.println("Girl");
+            }
+        }
+```
+
+---
+
+33
+if a user enters a number and it is even, print "Value is even", otherwise print "Value is odd" and prints Odd value is just right
+If the number is even then check if it is greater than 1000 or not.
+If the number is greater than 1000, then print "Even value is large", else print "Even value is just right".
+
+```
+Scanner scan = new Scanner(System.in);
+    System.out.println("Please enter a number");
+    int num = scan.nextInt();
+    if (num % 2 == 0){
+      System.out.println("Value is even");
+      if (num > 1000){
+        System.out.println("Even value is large");
+      }else{
+        System.out.println("Even value is just right");
+      }
+    }else{
+      System.out.println("Value is odd");
+      System.out.println("Odd value is just right");
+    }
+```
+
+---
+
+34
+Write a program to find the largest number among three distinct numbers using nested if condition
+
+```
+ Scanner scan = new Scanner(System.in);
+    System.out.println("Please enter 3 distinct numbers");
+    int num1 = scan.nextInt();
+    int num2 = scan.nextInt();
+    int num3 = scan.nextInt();
+    if (num1 > num2 && num1 > num3){
+      System.out.println("The largest number is " + num1);
+    }else if (num2 > num1 && num2 > num3){
+      System.out.println("The largest number is " + num2);
+    }else {
+      System.out.println("The largest number is " + num3);
+    }
+```
+
+---
+
+
+ Finding age and gender
+
+Scanner in = new Scanner(System.in);
+System.out.println("Please enter your gender: M or F");
+String sex = in.nextLine();
+
+System.out.println("Please enter your age");
+int age = in.nextInt();
+
+if (sex.equalsIgnoreCase("M") || sex.equalsIgnoreCase("m")) {
+    if (age > 25) {
+    	System.out.println("Man");
+    }else {
+    	System.out.println("Boy");
+    }
+} else if (sex.equalsIgnoreCase("F") || sex.equalsIgnoreCase("f")) {
+	if (age > 25) {
+    	System.out.println("Woman");
+    }else {
+    	System.out.println("Girl");
+    }
+}
+
+---
+
+35
+- if score is below 600 --> eligibility = "Not eligible"
+- if score is between 600 and 700 inclusive --> eligibility = "Maybe eligible"
+- if score is between 701 and 800 inclusive --> eligibility = "Eligible"
+- if score is higher than any other previous values --> eligibility = "Definitely eligible"
+
+```
+Scanner scan = new Scanner(System.in);
+    //System.out.println("Do you need a loan?");
+    boolean loan = scan.nextBoolean();
+    String eligiblity= null;
+
+    if (loan){
+      //System.out.println("What is your credit score?");
+      int creditScore = scan.nextInt();
+      if (creditScore < 600){
+        eligiblity =  "The eligibility is Not eligible";
+      }else if (creditScore >= 600 && creditScore <= 700){
+        eligiblity =  "The eligibility is Maybe eligible";
+      }else if ( creditScore >= 701 && creditScore <= 800){
+        eligiblity = "The eligibility is Eligible";
+      }else{
+        eligiblity = "The eligibility is Definitely eligible";
+      }
+    }else {
+      eligiblity = "Unknown";
+    }
+    System.out.println(eligiblity);
+```
+
+---
+
+36
+if int1 and int2 are equal and word1 and word2 are equal, output "AND"
+if int1 and int2 are equal or word1 and word2 are equal, output "OR"
+if int1 and int2 are not equal and word1 and word2 are not equal, output "NONE"
+
+```
+Scanner scan = new Scanner(System.in);
+
+    //System.out.println("Please enter two strings");
+    String word1 = scan.nextLine();
+    String word2 = scan.nextLine();
+    //System.out.println("Please enter two numbers");
+    int num1 = scan.nextInt();
+    int num2 = scan.nextInt();
+    if (word1.equals(word2) && num1 == num2){
+      System.out.println("AND");
+    }else if(word1 == word2 || num1 == num2){
+      System.out.println("OR");
+    }else{
+      System.out.println("NONE");
+    }
+```
+
+---
+37
+If user is thirsty and not sleepy--> drink=water
+If user is thirsty and sleepy--> drink=coffee
+If user is not thirsty and sleepy --> drink=tea
+Otherwise drink="nothing"
+
+
+```
+ Scanner scan = new Scanner(System.in);
+      //System.out.println("Are you thirsty?");
+      boolean thirsty = scan.nextBoolean();
+      //System.out.println("Are you sleepy?");
+      boolean sleepy = scan.nextBoolean();
+      String drink = null;
+      if (!sleepy && thirsty){
+        drink = "water";
+      }else if (thirsty && sleepy){
+        drink = "coffee";
+      }else if (!thirsty && sleepy){
+        drink = "tea";
+      }else{
+        drink = "nothing";
+      }
+      System.out.print("Looks like you need to drink " + drink);
+```
+
+
+---
+
+38
+Prompt user with a question: "Is it weekend?"
+If it is not a weekend --> subject="manual testing"
+Otherwise --> subject="Java"
+
+
+```
+ Scanner scan = new Scanner(System.in);
+    System.out.println("Is is weekend?");
+    boolean ask = scan.nextBoolean();
+    String subject = null;
+    if (ask){
+      subject = "Today you will be learning Java";
+    }else {
+      subject = "Today you will be learning manual testing";
+    }
+    System.out.println(subject);
+```
+
+
+---
+
+39
+A school has following rules for grading system:
+ a. 1 to 25 - F b. 25 to 45 - E c. 45 to 50 - D d. 50 to 60 - C e. 60 to 80 - B f. Above 80 - A Ask the user to enter marks and print the corresponding grade.
+
+
+```
+Scanner scan = new Scanner(System.in);
+    System.out.println("Please enter your mark");
+    int mark = scan.nextInt();
+    String result = null;
+    if (mark >= 1 && mark <= 25){
+      result = "Your grade is F";
+    }else if( mark >=25 && mark <= 45){
+      result = "Your grade is E";
+    }else if( mark >=45 && mark <= 50){
+      result = "Your grade is D";
+    }else if( mark >=50 && mark <= 60){
+      result = "Your grade is C";
+    }else if( mark >=60 && mark <= 80){
+      result = "Your grade is B";
+    }else if( mark > 80 ){
+      result = "Your grade is A";
+    } else{
+      result = "Please enter valid mark";
+    }
+    System.out.println(result);
+```
+
+
+---
+40
+Case:
+
+
+```
+Scanner scan = new Scanner(System.in);
+    System.out.println("Enter name of the instructor");
+    String name = scan.nextLine();
+    String teach = null;
+
+    switch(name.toLowerCase()){
+      case "asghar":
+        teach = "Will take care of Java Assignment";
+        break;
+      case "moazzam":
+        teach = "Will take care of SDLC Assignment";
+        break;
+      case "weqas":
+        teach = "Will take care of Selenium Assignment";
+        break;
+      case "asel":
+        teach = "Will take care of every Assignment";
+        break;
+      default:
+        teach = " Invalid instructor selected";
+    }
+    System.out.println(teach);
+
+```
+
+---
+41
+First Output: "Enter the age of the Child"
+case 1: if age is 1 print as "You can Crawl"
+
+
+```
+Scanner scan = new Scanner(System.in);
+      System.out.println("Enter the age of the Child");
+      int age = scan.nextInt();
+      String action = null;
+     switch (age) {
+     case 1:
+       action = "You can Crawl";
+       break;
+     case 2:
+       action =  "You can Talk";
+       break;
+     case 3:
+       action =  "You can Dance";
+       break;
+     case 4:
+       action =  "You can get Trouble";
+       break;
+     default:
+       action = "I don't know how old you are";
+     }
+     System.out.println(action);
+```
+
+
+---
+42
+Let us consider there are three students in the class with roll number starting from (101 to 103) if any number other than 101-103 are present display "Not found Student name: in Class"
+
+```
+Scanner scan = new Scanner(System.in);
+    System.out.println("Enter the roll number of the Child");
+    int roll = scan.nextInt();
+    String name = null;
+    switch(roll){
+      case 101:
+        name = "Student name: Ramesh";
+        break;
+      case 102:
+        name = "Student name: Mahesh";
+        break;
+      case 103:
+        name = "Student name: Mukesh";
+        break;
+      default:
+        name = "Not found Student name: in Class";
+    }
+    System.out.println(name);
+```
+
+---
+43
+Write a program to input number "Input a number between 1-12" and when you input a number it should display the month using Scanner and Switch statement.
+
+```
+Scanner scan = new Scanner(System.in);
+    System.out.println("Input a number between 1-12");
+    int num = scan.nextInt();
+    String month = null;
+    switch(num){
+      case 1:
+        month = "January";
+        break;
+      case 2:
+        month = "February";
+        break;
+      case 3:
+        month = "March";
+        break;
+      case 4:
+        month = "April";
+        break;
+      case 5:
+        month = "May";
+        break;
+      case 6:
+        month = "June";
+        break;
+      case 7:
+        month = "July";
+        break;
+      case 8:
+        month = "August";
+        break;
+      case 9:
+        month = "September";
+        break;
+      case 10:
+        month = "October";
+        break;
+      case 11:
+        month = "November";
+        break;
+      case 12:
+        month = "December";
+        break;
+      default:
+       month = "Invalid";
+    }
+    System.out.println(month);
+```
+
+
+
+---
+
+44
+Prompt user with questions: "Please enter your favorite car make"
+
+```
+Scanner scan = new Scanner(System.in);
+    System.out.println("Please enter your favorite car make");
+    String car = scan.nextLine();
+    String carOrigin = null;
+    switch(car.toLowerCase()){
+      case "bmw":
+       carOrigin = "german car";
+      break;
+      case "toyota":
+       carOrigin ="japanese car";
+      break;
+      case "maserati":
+       carOrigin = "italian car";
+      break;
+      default:
+       carOrigin= "unknown";
+    }
+    System.out.println("Your favorite car is " + carOrigin);
+```
+
+
+---
+45
+Ask the user to enter any number from 1-7.
+Based on the number define the day of the week
+
+```
+Scanner scan = new Scanner(System.in);
+    System.out.println("Input a number between 1-7");
+    int num = scan.nextInt();
+    String day = null;
+    switch(num){
+      case 1:
+        day = "Monday";
+        break;
+      case 2:
+        day = "Tuesday";
+        break;
+      case 3:
+        day = "Wednesday";
+        break;
+      case 4:
+        day = "Thursday";
+        break;
+      case 5:
+        day = "Friday";
+        break;
+      case 6:
+        day = "Saturday";
+        break;
+      case 7:
+        day = "Sunday";
+        break;
+      default:
+        day = "Invalid";
+    }
+    System.out.println(day);
+```
+
+46
+---
+While loops:
+
+Using while loop print numbers from 0 to 8
+
+```
+    int i = 0;
+    while (i < 9){
+      System.out.println(i);
+      i ++;
+    }
+```
+
+```
+ for (int i = 0; i < 9; i++){
+      System.out.println(i);
+    }
+```
+
+47
+Using while loop print numbers from 15 to 0
+```
+   int num = 16;
+    while (num > 0 ){
+      num --;
+      System.out.println(num);
+    }
+```
+
+48
+Using while loops that print out even numbers from 1 to 13
+
+```
+   int i = 2;
+    while(i < 13){
+      System.out.println(i);
+      i += 2;
+    }
+```
+
+Print only odd number
+
+int i = 99;
+while(i >0){
+	System.out.print(i + " ");
+	 i -= 2;
+}
+
+49
+Write a java program to print "Hello Syntax Team! How are you?" three times using the while loop
+
+```
+ int i = 1;
+  while (i <=3){
+    System.out.println("Hello Syntax Team! How are you?");
+    i ++;
+  }
+```
+
+
+50
+Write a program to print a sequence of numbers starting from 7 to 98.
+
+```
+ int i = 7;
+    while (i < 99) {
+      System.out.println(i);
+      i += 7;
+    }
+```
+
+```
+for(int i = 7; i < 99; i += 7){
+      System.out.println(i);
+    }
+```
+
+---
+Do while loops:
+
+51
+Using do while loop print numbers from 10 to 20
+Must not include the number 20 in the output
+
+```
+  public static void main(String[] args){
+    int i = 10;
+    do {
+      System.out.println(i);
+      i ++;
+    }while (i< 20);
+  }
+```
+
+52
+Create a do while loop that prints out "Hello World!" 5 times.
+
+```
+   int i = 1;
+    do{
+      System.out.println("Hello World!");
+      i ++;
+    }while(i<6);
+```
+
+
+53
+Using do while loop print even numbers from 20 to 1
+
+```
+ int i = 20;
+  do {
+    System.out.println(i);
+    i -= 2;
+  }while(i > 0);
+```
+
+
+
+
+---
+For loop:s
+
+54
+Create a for loop that prints out numbers from 0 to 12
+Must not include the number 12 in the output
+
+```
+ public static void main(String[] args){
+    for (int i = 0; i < 12; i++){
+      System.out.println(i);
+    }
+```
+
+55
+Create a for loop that prints out even numbers from 10 to 0
+Must not include the number 0 in the output
+
+```
+ for (int i = 10; i > 0; i--) {
+      if (i % 2 == 0) {
+        System.out.println(i);
+      }
+    }
+```
+
+for (int i = 10; i > 0; i--) {
+		if (i % 2 != 0) {
+		      System.out.println(i);
+		}
+}
+
+56
+Create a for loop that prints out even numbers from 2 to 14 using if condition
+Must include the number 14 in the output
+
+
+```
+ for (int i = 2; i <=14; i++){
+      if (i%2==0){
+        System.out.println(i);
+      }
+    }
+```
+
+
+57
+Create a for loop that prints out odd numbers from 5 to 22
+Must not include the number 22 in the output
+
+
+```
+for (int i = 5; i <=22; i++){
+      if (i%2!=0){
+        System.out.println(i);
+      }
+    }
+```
+
+58
+Using for loop print "Good Morning" 20 times
+
+```
+ for (int i = 0; i <= 20; i++){
+      System.out.println("Good Morning");
+    }
+```
+
+
+
+59
+Write a program that prints the string "Hey, it is year: " and the years between 2011 and 2019.
+Must include year 2019 in the output
+
+```
+ for (int i = 2011; i <= 2019; i++){
+      System.out.println("Hey,it is year:");
+      System.out.println(i);
+    }
+```
+
+
+60
+Write a program that prints the count down from 10 up to 1 and then says "Happy New Year!".
+
+```
+    for (int i = 10; i > 0; i--){
+      System.out.println(i);
+    }
+    System.out.println("Happy New Year!");
+  }
+```
+
+
+61
+Write a program that uses for loop to prints multiplication of number 3 from 1 to 10
+
+```
+ int num = 3;
+   int multi;
+   for (int i = 0; i <=10; i++){
+     multi = num * i;
+     System.out.println(num +"*"+i+"="+multi);
+   }
+```
+
+62
+Using for loop Print 1 to 10 Numbers except 5 and 6
+
+```
+  for (int i = 1; i <=10; i ++){
+      if ((i == 5) || (i == 6)){
+        continue;
+      }
+      System.out.println(i);
+    }
+```
+
+
+63
+int x;
+Write a for loop that will print out a series of numbers starting at 0 and ending at the x(value must be taken from a user), exclusive x.
+
+```
+     Scanner scan = new Scanner(System.in);
+     System.out.println("Please enter a number:");
+     int x = scan.nextInt();
+     for (int i = 0; i < x; i++){
+       System.out.print(i+ " ");
+     }
+```
+
+64
+Write a for loop that will print out a series of numbers starting at 0 and ending at the doubled value of end(value must be taken from a user), exclusive.
+
+```
+Scanner scan = new Scanner(System.in);
+    System.out.println("Please enter a number");
+    int end = scan.nextInt();
+    end *=2;
+    for (int i = 0; i < end; i ++ ){
+      System.out.print(i + " ");
+    }
+```
+
+
+65
+Write a for loop that will print out a series of numbers starting at one less than x and ending at 0.
+
+```
+Scanner scan = new Scanner(System.in);
+    System.out.println("Please enter a number");
+    int x = scan.nextInt();
+    x -= 1;
+    for (int i = x; i >=0; i--){
+      System.out.print(i + " ");
+    }
+```
+
+
+
+66
+print this pattern:
+```
+$$$$
+$  $
+$  $
+$$$$
+```
+
+```
+for (int i = 0; i <6; i ++){
+          System.out.println("syntax");
+          for (int j = 0; j <1; j++){
+            System.out.println("");
+          }
+        }
+```
+
+for (int i = 0; i <6; i ++){
+          System.out.println("syntax");
+          System.out.println("");
+          }
+        }
+
+
+
+67
+```
+     for (int i = 0; i < 1; i ++){
+          for (int j = 1; j <=10; j++){
+              System.out.print(j + " ");
+          }
+          System.out.println();
+          for (int j = 1; j <=20; j++){
+            j+=1;
+              System.out.print(j + " ");
+          }
+          System.out.println();
+          for (int j = 1; j <=30; j++){
+            j+=2;
+              System.out.print(j + " ");
+          }
+          System.out.println();
+          for (int j = 1; j <=40; j++){
+            j+=3;
+              System.out.print(j + " ");
+          }
+          System.out.println();
+          for (int j = 1; j <=50; j++){
+            j+=4;
+              System.out.print(j + " ");
+          }
+     }
+```
+
+
+68
+```
+      for (int i = 0; i < 1; i++) {
+
+      for (int j = 0; j < 4; j++) {
+        System.out.print("$");
+      }
+      System.out.println();
+      for (int j = 0; j <= 5; j++) {
+        System.out.print("$  ");
+        j+=4;
+      }
+      System.out.println();
+      for (int j = 0; j <= 5; j++) {
+        System.out.print("$  ");
+        j+=4;
+      }
+      System.out.println();
+      for (int j = 0; j < 4; j++) {
+        System.out.print("$");
+      }
+    }
+```
+
+
+69
+```
+  Scanner sc = new Scanner(System.in);
+// Taking rows value from the user
+System.out.println("How many rows you want in this pattern?");
+int rows = sc.nextInt();
+//System.out.println("Here is your pattern....!!!");
+// Printing upper half of the pattern
+for (int i = rows; i >= 1; i--) {
+  for (int j = 1; j <= i; j++) {
+    System.out.print(j + " ");
+  }
+  System.out.println();
+}
+// Printing lower half of the pattern
+for (int i = 2; i <= rows; i++) {
+  for (int j = 1; j <= i; j++) {
+    System.out.print(j + " ");
+  }
+  System.out.println();
+}
+// Closing the resources
+sc.close();
+```
+
+
+```
+    int rows = 7;
+    for (int i = rows; i >= 1; i--) {
+      for (int j = 1; j <= i; j++) {
+        System.out.print(j + " ");
+      }
+      System.out.println();
+    }
+    for (int i = 2; i <= rows; i++) {
+      for (int j = 1; j <= i; j++) {
+        System.out.print(j + " ");
+      }
+      System.out.println();
+    }
+```
+
+
+
+---
+Array and enhanced for loop:
+
+70
+Write a program that creates an array of integers and stores the following values: 45, 78, 12, 67, 55 and then prints all array values.
+print 45 78 12 67 55
+
+
+```
+ int arr[] = {45, 78, 12, 67, 55};
+for (int i = 0; i < arr.length; i++) {
+	System.out.print(arr[i] + " ");
+}
+
+
+ int arr[] = {45, 78, 12, 67, 55};
+    for(int a:arr){
+      System.out.print(a + " ");
+    }
+  }
+```
+
+71
+Write a program that creates an array of integers that stores the following values: 45,78, 12, 67, 55, 89, 23, 77, 88
+Print out 45 12 55 23 88
+
+```
+      int[] arr = {45,78, 12, 67, 55, 89, 23, 77, 88};
+         System.out.print(arr[0]+" "+arr[2]+" "+arr[4]+" "+arr[6]+" "+arr[8]);
+    }
+```
+
+
+72
+Write a program that creates an array with the following values{s, a, y, b, n, c, t, d, a, e, x}
+Print out syntax from it.
+
+```
+String[] arr = {"s", "a", "y", "b", "n", "c", "t", "d", "a", "e", "x"};
+System.out.print(arr[0]+arr[2]+arr[4]+arr[6]+arr[8]+arr[10]);
+
+```
+
+73
+Write a program that creates an array of strings with the following values{"This", "is", "array", "of", "strings"} and prints all values in one line.
+Print out "This is array of strings"
+
+```
+  String[] arr = {"This", "is", "array", "of", "strings"};
+  System.out.print(arr[0]+" "+arr[1]+" "+arr[2]+" "+arr[3]+" "+arr[4]);
+```
+
+74
+int [] years = new int[11];
+		years[0] = 2010;
+		years[1] = 2011;
+		years[2] = 2012;
+		years[3] = 2013;
+		years[4] = 2014;
+		years[5] = 2015;
+		years[6] = 2016;f
+		years[7] = 2017;
+		years[8] = 2018;
+		years[9] = 2019;
+		years[10] = 2020;
+
+		for (int i = 0; i < years.length; i ++) {
+			System.out.println(years[i]);
+		}
+
+75
+Print out 78 55 77
+
+int[] arr = {45, 78, 12, 67, 55, 89, 23, 77, 88};
+      System.out.print(arr[1]+" "+arr[4]+" "+arr[7] );
+
+76
+Ask the user to input Days of a week beginning with Sunday using Scanner class and print
+
+```
+   Scanner input = new Scanner(System.in);
+    String[]days = new String[7];
+
+    for (int i = 0; i < days.length; i++) {
+      int day = i+1;
+      //System.out.println("Please enter day " + day + " of the week");
+      days[i] = input.nextLine();
+    }
+
+    for (String day: days) {
+      System.out.println(day);
+    }
+```
+
+
+77
+Create an array of integers that will store 5 elements taken from a user
+Then print out all the elements you have created in the first loop in reverse order.
+
+```
+    Scanner s = new Scanner(System.in);
+    int[] myArray = new int[5];
+
+      System.out.println("");
+    // creating array from user input
+    for (int i = 0; i < myArray.length; i++) {
+      myArray[i] = s.nextInt();
+    }
+    for (int i = myArray.length - 1; i >= 0; i--) {
+      System.out.println(myArray[i]);
+    }
+```
+
+Scanner s = new Scanner(System.in);
+int[] myArray = new int[5];
+System.out.println("Enter the elements of the array:");
+
+// creating array from user input
+for (int i = 0; i < myArray.length; i++) {
+	myArray[i] = s.nextInt();
+}
+
+for (int i = myArray.length - 1; i >= 0; i--) {
+	System.out.println(myArray[i] + "  ");
+}
+
+78
+Create an int array of integers with a size of 5 and input values with Scanner. output will be input * 10
+
+```
+    Scanner s = new Scanner(System.in);
+    int[] myArray = new int[5];
+    System.out.println("");
+
+    for (int i = 0; i < myArray.length; i++) {
+      myArray[i] = s.nextInt();
+      System.out.println(myArray[i] * 10);
+    }
+```
+
+
+
+---
+2D Array
+
+79
+Write a program to print values from a 2D array
+
+```
+    double[][] arr = {
+        { 1.4, 2.0, 3.3, 2.0 },
+        { 4.0, 1.5, 6.1, 1.0 },
+        { 1.2, 3.1, 4.0, 1.6 }
+        };
+    for (int i = 0; i < 3; i++) {
+      for (int j = 0; j <= arr.length; j++) {
+        System.out.print(arr[i][j] + " ");
+      }
+      System.out.println();
+    }
+```
+
+
+80
+Write a program to double the values of every element in the array and print it out.
+
+```
+        double[][] a = {
+        {1.4,2.0,3.3,2},
+        {4,1.5,6.1,1},
+        {1.2,3.1,4,1.6}
+      };
+
+      //Double and print array
+      for (int i = 0; i < 3; i++){
+        for (int j = 0; j <= a.length; j++ ){
+          System.out.print((a[i][j]) *2 + " ");
+        }
+        System.out.println();
+      }
+```
+
+
+81
+Write a program that prints the highest value in the array.
+
+```
+     int [] arr = {5, 4, 8};
+     int max = arr[0];
+     for (int i = 0; i < arr.length; i++){
+       if (arr[i] > max){
+         max = arr[i];
+         System.out.println(max);
+       }
+     }
+```
+
+
+82
+Write a program that will print the sum of all elements in 2D array.
+
+```
+    int[][] a = {
+      {-5,-2,-3,7},
+      {1,-5,-2, 2},
+      {1,-2, 3,-4}
+    };
+    int sum = 0;
+    for (int i = 0; i < a.length; i++) {
+      for (int j = 0; j < a[i].length; j++) {
+        sum += a[i][j];
+      }
+    }
+    System.out.println(sum);
+```
+
+
+
+83
+calculates the sum of elements from each row in a 2D array
+
+```
+    int[][] a = {
+      {1,1,2}, //sum = 4
+      {3,1,2}, //sum = 6
+      {3,5,3}, //sum = 11
+      {0,1,2}  //sum = 3
+    };
+  for (int i = 0; i < a.length; i++) {
+      int sum = 0;
+      for (int j = 0; j < a[i].length; j++) {
+        sum += a[i][j];
+      }
+      System.out.println(sum);
+    }
+```
+
+84
+Write a program that prints the total number of elements that are negative AND odd
+
+```
+   int[][] a = {
+      { -5, -2, -3, 7 },
+      { 1, -5, -2, 2 },
+      { 1, -2, 3, -4 }
+      };
+
+    int sum = 0;
+    for (int i = 0; i < a.length; i++) {
+      for (int j = 0; j < a[0].length; j++) {
+        if (a[i][j] < 0 && a[i][j] % 2 != 0) {
+          sum ++;
+        }
+      }
+    }
+    System.out.println(sum);
+```
+
+
+85
+Write a program that sums all numbers that are on even index and on even row.
+
+```
+    int[][] a = {
+      {-5,-2,-3,7},
+      {1,-5,-2,2},
+      {1,-2,3,-4}
+    };
+
+     int sum = 0;
+    for (int i = 0; i < a.length; i += 2) {
+      for (int j = 0; j < a[0].length; j+=2) {
+        sum += a[i][j];
+      }
+    }
+    System.out.println(sum);
+```
+
+
+
+---
+Object and Classes:
+
+86
+Inside class declare a String variable 'name' and integer variable 'roll_no'.
+Create an object of the class and assign the value of 2 to roll_no and value of "John" to name
+
+
+```
+class Main {
+    String name;
+    int roll_no;
+    void info(){
+        System.out.println("Name is "+name + " and roll number is "+roll_no);
+    }
+
+    public static void main(String[] args) {
+        Main m = new Main();
+        m.name = "John";
+        m.roll_no = 2;
+        m.info();
+    }
+}
+
+```
+
+
+
+87
+Create two objects of that class in which you will be assigning the following values and then print them.
+
+```
+class Main {
+    String carColor;
+    String carMake;
+    int carYear;
+    void carInfo(){
+    System.out.println("Car color is " +carColor + " and car year is " + carYear +
+                        " and car model is " + carMake);
+    }
+
+ public static void main(String[]args){
+  Main a = new Main();
+  a.carColor="Black";
+  a.carYear=2019;
+  a.carMake="BMW";
+  Main b = new Main();
+  b.carColor="White";
+  b.carYear=2018;
+  b.carMake="Toyota";
+  a.carInfo();
+  b.carInfo();
+}
+
+} //class Main
+```
+
+
+88
+In this class, you should specify the following attributes: breed, name, color, and following behaviors: bark(), run(), play().
+Create 3 different objects of it: Husky, Bulldog, Labrador with specific attributes and behaviors.
+
+```
+class Main {
+  String breed;
+  String name;
+  String color;
+
+  void bark(){
+    System.out.println(name + " can bark");
+  }
+  void run(){
+    System.out.println(name + " can run");
+  }
+  void play(){
+    System.out.println(name + " can play");
+  }
+  public static void main(String[]args){
+
+    Main a = new Main();
+    a.breed = "Husky";
+    a.name = "Husky";
+    a.color = "Black";
+
+    Main b = new Main();
+    b.breed = "Bulldog";
+    b.name = "Bulldog";
+    b.color = "Brown";
+
+    Main c = new Main();
+    c.breed = "Labrador";
+    c.name = "Labrador";
+    c.color = "White";
+
+    a.bark();
+    a.run();
+    a.play();
+    b.bark();
+    b.run();
+    b.play();
+    c.bark();
+    c.run();
+    c.play();
+  }
+}
+
+```
+
+
+---
+String manipulation:
+
+89
+Find out how many characters are there in the given String.
+
+```
+String name = "Timmy";
+System.out.println(name.length());
+```
+
+90
+Create a String named s1 = "hello" check weather string is empty or not
+Create a String named s2 = "" check weather string is empty or not
+
+```
+String s1 = "hello";
+String s2 = "";
+
+System.out.println(s1.isEmpty());
+System.out.println(s2.isEmpty());
+```
+
+
+91
+convert to upper and lower.
+
+```
+String str1= "syntax technologies";
+String str2= "SYNTAX TECHNOLOGIES";
+
+System.out.println(str1.toUpperCase());
+System.out.println(str2.toLowerCase());
+```
+
+
+92
+
+```
+System.out.println(s1.endsWith("u"));
+System.out.println(s1.endsWith("world"));
+System.out.println(s1.endsWith("are"));
+System.out.println(s1.endsWith("you"));
+```
+
+
+93
+Print out the position of the first occurrence of "c".
+Print out the position of the first occurrence of " ".
+Print out the position of the first occurrence of the variable target1.
+Print out the position of the first occurrence of the variable target2.
+
+
+```
+System.out.println(str.indexOf("c"));
+System.out.println(str.indexOf(" "));
+System.out.println(str.indexOf(target1));
+System.out.println(str.indexOf(target2));
+```
+
+
+94
+Create a String given="I love Java classes at Syntax"
+display using substring:
+classes at Syntax
+I love Java
+
+
+```
+String given="I love Java classes at Syntax";
+System.out.println(given.substring(12));
+System.out.println(given.substring(0, 11));
+```
+
+
+95
+Print first 3 letter of an input.
+
+```
+//String s = "banana";
+//System.out.println(s.substring(0, 3));
+
+Scanner input = new Scanner(System.in);
+System.out.println("Please enter the word more than 3 letter ");
+String word = input.nextLine();
+String firstThree = word.substring(0, 3);
+
+System.out.println("The first 3 letters of "+ word + " is " + firstThree);
+```
+
+
+96
+You have Scanner class to input string value and return resul accordingly.
+
+```
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter any programming language");
+String language = sc.nextLine();
+String out = "";
+
+switch (language.toLowerCase()){
+    case "java":
+        out = "Java is a programming language";
+        break;
+    case "c":
+        out = "C is a procedural programming language";
+        break;
+    case "c++":
+        out = "C++ is a middle-level programming language";
+        break;
+    default:
+        out = "Doesn't match any programming language";
+}
+System.out.println(out);
+```
+
+97
+Based on the user inputs program should give a correct answer.
+
+```
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the browser name to proceed further with execution");
+    String browser = sc.nextLine();
+    String out = "";
+
+    switch (browser.toLowerCase()){
+    case "chrome":
+        out = "Proceed with Chrome browser";
+        break;
+    case "firefox":
+        out = "Proceed with Firefox browser";
+        break;
+    case "ie":
+        out = "Proceed with IE browser";
+        break;
+    default:
+        out = "Invalid browser";
+}
+System.out.println(out);
+```
+
+98
+Create a String given="Hello Syntax friends".
+Using String methods from given String create new String "Welcome Syntax family"
+
+```
+String given="Hello Syntax friends";
+String s = given.replace("Hello", "Welcome").replace("friends", "family");
+System.out.println(s);
+
+```
+
+
+99
+Write code that will take in a String input and check to see if it is a palindrome(same latter on both end) or not.
+
+```
+Scanner inp = new Scanner(System.in);
+System.out.print("In:");
+String givenString = inp.nextLine();
+//write your code below
+
+//String givenString = "was it a car or a cat I saw";
+char f = givenString.charAt(0);
+char l = givenString.charAt(givenString.length() -1);
+
+if (f==l){
+    System.out.println(true);
+}else{
+    System.out.println(false);
+}
+```
+
+
+100
+Reverse the string.
+
+```
+Scanner inp = new Scanner(System.in);
+System.out.print("In:");
+String s = inp.nextLine();
+//write your code below
+
+for (int i = s.length() - 1; i >=0; i --){
+    System.out.print(s.charAt(i));
+}
+```
+
+
+101
+Print a string with skipping one letter
+
+```
+Scanner inp = new Scanner(System.in);
+System.out.print("In:");
+String word = inp.nextLine();
+//write your code below
+
+for (int i = 0; i <= word.length(); i ++){
+    System.out.print(word.charAt(i));
+    i +=1;
+}
+```
+
+
+102
+Write a for loop that will loop through every character of a word and print out each character, each on a separate line
+
+```
+Scanner inp = new Scanner(System.in);
+System.out.print("In:");
+String word = inp.nextLine();
+//write your code below
+
+for ( int i = 0; i <word.length(); i ++){
+    System.out.println(word.charAt(i));
+}
+```
+
+
+103
+Print out String in same line with a space.
+
+```
+Scanner inp = new Scanner(System.in);
+System.out.print("In:");
+String s = inp.nextLine();
+//write your code below
+
+
+for (int i = 0; i < s.length(); i ++){
+    System.out.print(s.charAt(i) + " ");
+}
+```
+
+
+104
+Create an array of names that will hold 5 String elements.
+Print out first 3 letter of the names.
+
+```
+Scanner input = new Scanner(System.in);
+System.out.println("Input:");
+String[] names = new String[5];
+
+for (int i = 0; i < names.length; i++) {
+    names[i] = input.next();
+    if (names[i].length() >= 3)
+        System.out.println(names[i].substring(0, 3));
+    else
+        System.out.println(names[i]);
+}
+```
+
+
+105
+Write a program that will print out only vowels of that string
+
+```
+Scanner inp = new Scanner(System.in);
+System.out.print("In:");
+String word = inp.nextLine();
+word.toLowerCase();
+//write your code below
+
+for (int i = 0; i < word.length(); i++) {
+    // Check a character is vowel or not
+    if (word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'i'
+            || word.charAt(i) == 'o' || word.charAt(i) == 'u') {
+        // Display each vowel
+        System.out.print(word.charAt(i));
+    }
+}
+```
+
+
+---
+String Buffer:
+
+106
+Instantiate and StringBuffer class
+Append Value "Hello" to it
+Append value "World" to it.
+
+
+```
+StringBuffer sBuff = new StringBuffer("Hello");
+sBuff.append(" World");
+System.out.println(sBuff.toString().toUpperCase());
+```
+
+107
+Given String = "Hello Friends".  Reverse it using string buffer.
+
+```
+String s = "Hello Friends";
+String r = new StringBuffer(s).reverse().toString();
+System.out.println(r);
+```
+
+
+
+
+
+---
+Java methods:
+A method is a block of code that performs a specific task.
+
+108
+1. create method and name as m1. Inside your method body add print statement as "m1 method implementation"
+2. create another method and name as m2. Inside your method body add print statement as "m2 method implementation"
+3. Call these two methods in the main method
+
+```
+void m1(){
+    System.out.println("m1 method implementation");
+}
+void m2(){
+    System.out.println("m2 method implementation");
+}
+
+public static void main(String[] args) {
+
+    Main p = new Main();
+    p.m1();
+    p.m2();
+}
+```
+
+
+109
+
+```
+void newLine(){
+    System.out.println("newLine method implementation");
+}
+
+public static void main(String[] args) {
+    Main m = new Main();
+    m.newLine();
+    m.newLine();
+    m.newLine();
+}
+```
+
+
+110
+
+```
+void newLine(){
+    System.out.println("newLine method implementation");
+}
+void displayLine(){
+    System.out.println("displayLine method implementation");
+}
+
+public static void main(String[] args) {
+    Main m = new Main();
+    m.newLine();
+    m.displayLine();
+}
+```
+
+
+111
+1. Create one method as syntaxTechnologies and write the logic for that method in println statement as "Welcome to Syntax Technologies!"
+2. Create another method as syntaxStudents and write the logic for that method in println statement as "Welcome Syntax Students!"
+3. Call both methods
+
+```
+void syntaxTechnologies(){
+    System.out.println( "Welcome to Syntax Technologies!");
+}
+void syntaxStudents(){
+    System.out.println("Welcome Syntax Students!");
+}
+
+
+public static void main(String[] args) {
+    Main m = new Main();
+    m.syntaxTechnologies();
+    m.syntaxStudents();
+}
+```
+
+
+112
+Step1: Create a method that will accept with 2 parameters of integer type
+Step2: Write the logic in that method in println statement to print hours and minutes
+
+
+```
+void hm(int hour, int minute){
+    System.out.println(hour+":"+minute);
+}
+
+public static void main(String[] args) {
+    Main hourMinute = new Main();
+    hourMinute.hm(11,30);
+
+}
+```
+
+
+113
+
+```
+void hm(int hour, int minute){
+    System.out.println(hour+":"+minute);
+}
+
+public static void main(String[] args) {
+    Main hourMinute = new Main();
+    hourMinute.hm(11,30);
+
+}
+```
+
+
+114
+Step1: Create three methods that will accept 2 in parameters on integer type
+
+```
+void add(int a, int b){
+    System.out.println("Addition "+ (a+b));
+}
+void mul(int a, int b){
+    System.out.println("Multiplication " + (a*b));
+}
+void sub(int a, int b){
+    System.out.println("Subtraction "+ (a-b));
+}
+
+public static void main(String[] args) {
+    new Main().add(10, 20);
+    new Main().mul(5,6);
+    new Main().sub(30, 10);
+}
+```
+
+
+115
+Create a method that will accept a String as a parameter and return new String all in upper case
+
+```
+void toUp(String s){
+    System.out.println(s.toUpperCase());
+}
+public static void main(String[] args) {
+    new Main().toUp("test");
+}
+```
+
+
+116
+Create a method that will accept 2 numbers as parameters and return true if both numbers are even otherwise returned false
+
+```
+boolean bothEven(int a, int b){
+    if(a % 2 == 0 && b % 2 ==0){
+        return true;
+    }
+    return false;
+}
+
+public static void main(String[] args) {
+    Main m = new Main();
+    System.out.println(m.bothEven(4,6));
+    System.out.println(m.bothEven(3,4));
+    System.out.println(m.bothEven(-1,1));
+}
+```
+
+
+117
+calculate the sum of the EVEN integers from 1 to x (including x). x is the parameter
+
+```
+int sum = 0;
+void sumEvenToX(int x){
+    for (int i = 2; i <= x; i+= 2){
+       sum += i;
+    }
+    System.out.println(sum);
+}
+
+public static void main(String[] args) {
+    new Main().sumEvenToX(5);
+    new Main().sumEvenToX(8);
+}
+```
+
+
+118
+Create a method to Insert spaces after every character in the String s, then return the new string.
+
+```
+void spaceOut(String s){
+    for (int i = 0; i < s.length(); i++){
+        System.out.print(s.charAt(i) + " ");
+    }
+}
+
+public static void main(String[] args) {
+    new Main().spaceOut("hello");
+}
+```
+
+
+119
+Write  a method to Replace all instances of given character with a "*" within the given String.
+
+```
+String censorLetter(String s, char c){
+    return s.replaceAll(String.valueOf(c), "*");
+}
+
+public static void main(String[] args) {
+    Main m = new Main();
+
+    System.out.println( m.censorLetter("computer science",'e'));
+    System.out.println( m.censorLetter("trick or treat",'t'));
+}
+```
+
+
+
+
+---
+Variables and method:
+
+120
+Declare 3 instance variables to hold:
+year, school name and batch #
+Access variables from the main method and assign specific values to them and print them as
+I am a student of batch 9 studying at Syntax in the year of 2021
+
+```
+public class Main {
+    int year;
+    String name;
+    int batch;
+    void print(int batch, String name, int year){
+        this.year = year;
+        this.name = name;
+        this.batch = batch;
+        System.out.println("I am a student of batch "+batch+
+                " studying at "+name + " in the year of "+year);
+    }
+    public static void main(String[] args) {
+        Main m = new Main();
+        m.print(9, "Syntax", 2021);
+    }
+}
+```
+
+```
+public class Main {
+    static int year;
+    static String schoolName;
+    static int batch;
+    public static void main(String[] args) {
+        year = 2020;
+        schoolName = "Syntax";
+        batch = 6;
+        System.out.println("I am a student of batch " + batch + " studying at " +
+                schoolName + " in the year of " + year);
+    }
+}
+```
+
+121
+For you to do:
+declare 3 instance variables to hold an integer, double and char values.
+Create 2 instances of the class and assign values to variables and the print them
+Expected Output:
+10
+10.23
+a
+100
+100.23
+s
+
+```
+int num;
+double d;
+char ch;
+
+public static void main(String[] args) {
+    Main m1 = new Main();
+    m1.num = 10;
+    m1.d = 10.23;
+    m1.ch = 'a';
+    System.out.println(m1.num);
+    System.out.println(m1.d);
+    System.out.println(m1.ch);
+
+    Main m2 = new Main();
+    m2.num = 100;
+    m2.d = 100.23;
+    m2.ch = 's';
+    System.out.println(m2.num);
+    System.out.println(m2.d);
+    System.out.println(m2.ch);
+}
+```
+
+
+122
+For you to do:
+Declare 3 instance variables to hold:
+- name of the country
+- capital
+- population size
+Create a method to display values of instance variables
+Create 2 Object, assign values to instance variables, execute method display;
+
+Expected Output:
+The capital of USA is Washington DC and population is 330000000
+The capital of Kazakhstan is Astana and population is 18500000
+
+```
+String countryName;
+String capital;
+long size;
+void displayInfo(String countryName, String capital, long size){
+    System.out.println("The capital of "+ countryName+ " is "+capital+ " and population is "+size);
+}
+public static void main(String[] args) {
+    Main m1 = new Main();
+    m1.displayInfo("USA", "Washington DC", 330000000);
+
+    Main m2 = new Main();
+    m2.displayInfo("Kazakhstan", "Astana", 18500000);
+}
+```
+
+
+123
+For you to do:
+Declare the instancevariables to hold:
+- integer values
+- String values
+- double values
+- boolean values
+- float values
+Access instance variables and then print them all without assigning any values to them.
+Print variables one by one the same sequence that you declare them.
+Expected Output:
+0
+null
+0.0
+false
+0.0
+
+```
+int num;
+String str;
+double dob;
+boolean bl;
+float fl;
+
+public static void main(String[] args) {
+    Main m = new Main();
+    System.out.println(m.num);
+    System.out.println(m.str);
+    System.out.println(m.dob);
+    System.out.println(m.bl);
+    System.out.println(m.fl);
+}
+```
+
+124
+Declare static variable in class level as below and assign its value:
+String ss="Welcome To Syntax Technologies"
+Access variable in the main method and print it using three ways you learned so far
+Hint:
+first way: By calling directly
+Second way: By using the className
+Third way: By creating the object of the class
+
+
+```
+static String ss="Welcome To Syntax Technologies";
+public static void main(String[] args) {
+    System.out.println(ss);
+    System.out.println(Main.ss);
+    Main m = new Main();
+    System.out.println(m.ss);
+}
+```
+
+
+125
+Declare a static variable number that will hold an integer value:
+Access number from the main method and assign value to it.
+Create an Object of the class, access number in a nonstatic way and assing value of 200.
+Print out number using class name and using instance
+
+```
+    static int number;
+
+public static void main(String[] args) {
+    number = 200;
+    System.out.println(number);
+
+    Main m = new Main();
+    m.number = 200;
+    System.out.println(m.number);
+
+}
+```
+
+126
+Create a variable that will hold the count of all instances of the Main class
+Create 3 Object of the class and print value of the count variable;
+Expected Output: 3
+
+```
+
+    static int count;
+
+public static void main(String[] args) {
+    Main m1 = new Main();
+    count++;
+    Main m2 = new Main();
+    count++;
+    Main m3 = new Main();
+    count++;
+
+    System.out.println(count);
+}
+```
+
+
+---
+Static KeyWord
+The static keyword in Java is used for memory management mainly. We can apply static keyword with variables, methods, blocks and nested classes. The static keyword belongs to the class
+
+```
+Static methods can be called without creating objects
+```
+
+127
+Create two methods:
+The first method should be a non-static method that will print out the following message:
+"Programming is amazing."
+The second method should be a static method that will print out the following message:
+"Java is awesome."
+
+```
+    void m1(){
+        System.out.println("Programming is amazing.");
+    }
+    static void m2(){
+        System.out.println("Java is awesome.");
+    }
+
+public static void main(String[] args) {
+    Main m = new Main();
+    m.m1();
+    m2();
+}
+```
+
+
+128
+Create a static method with the following specification
+Return Type: String
+Method Name: mixString
+Parameters:
+- a String called s1
+- a String called s2
+Then inside method write logic that will return the strings combined, one letter at a time, starting with s1. See example below for an example.
+
+NOTE: s1 and s2 should be of equal lengths:
+s1 ==> "12345"
+s1 ==> "12345"
+s2 ==> "abcde"
+s2 ==> "abcde"
+mixString(s1,s2) ==> "1a2b3c4d5e"
+
+
+```
+public class Main {
+    static String mixString(String s1, String s2) {
+        String returnedString = "";
+        for (int i = 0; i < s1.length(); i++) {
+            returnedString = returnedString + s1.charAt(i) + s2.charAt(i);
+        }
+        return returnedString;
+    }
+    public static void main(String[] args) {
+        String firstValue = mixString("12345","abcde");
+        System.out.println(firstValue);
+        String secondValue = mixString("howdy","hello");
+        System.out.println(secondValue);
+    }
+}
+```
+
+
+129
+For you to do:
+Declare two static variables to hold
+- country name
+- continent
+Create a method to display the value of static variables in the following format:
+____ located on ____ continent
+In the main method assign values to a static variable and execute method display
+Expected Output:
+Morocco located on Africa continent
+
+```
+static String countryName;
+static String continent;
+void display(){
+    System.out.println(countryName + " located on "+ continent + " continent");
+}
+
+public static void main(String[] args) {
+    countryName = "Morocco";
+    continent = "Africa";
+    Main m = new Main();
+    m.display();
+}
+```
+
+
+130
+For you to do:
+Complete the mystery method so that it takes in an integer array as a parameter, and then modifies each element based on whether it's even or odd.
+If the number is even, divide it by 2. If it's odd, multiply it by 10.
+Expected Output:
+10 1 30 2 50
+
+```
+public class Main {
+
+    static void mystery(int[] array)   {
+        for (int i = 0; i < array.length; i++){
+            if (array[i] % 2==0){
+                System.out.print(array[i] /2 + " ");
+            }else {
+                System.out.print(array[i] * 10 + " ");
+            }
+        }
+    }
+    public static void main(String[] args) {
+        int[] a = {1, 2, 3, 4, 5};
+        mystery(a);
+    }
+}
+```
+
+
+131
+Write a method header on line two with the following specs:
+
+Returns:
+a String
+Name:
+thirdLetter
+Parameters:
+a String called s
+Then complete the method by programming the following behavior
+
+Returns every 3rd letter of the String s,
+starting from the first letter.
+See below examples.
+Examples:
+
+thirdLetter("hello there") ==> "hltr"
+thirdLetter("technology") ==> "thly"
+
+```
+public class Main {
+    static String thirdLetter(String s){
+        String newString = "";
+        for (int i = 0; i < s.length(); i++) {
+            if (i % 3 == 0) {
+                newString += (s.charAt(i));
+            }
+        }
+        return newString;
+    }
+    public static void main(String[] args) {
+        System.out.println(thirdLetter("hello there")); //"hltr"
+        System.out.println(thirdLetter("technology")); //"thly"
+    }
+}
+```
+
+
+```
+public class Main {
+    static String thirdLetter(String s){
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < s.length(); i += 3) {
+            sb.append(s.charAt(i));
+        }
+        return sb.toString();
+    }
+    public static void main(String[] args) {
+        System.out.println(thirdLetter("hello there")); //"hltr"
+        System.out.println(thirdLetter("technology")); //"thly"
+    }
+}
+```
+
+
+132
+Complete the reduce10 method by making it subtract 10 from every element of the double array nums.
+
+The method should static and it should return a new 2D array object
+
+Print values from new array in the format below input
+
+1 2 3 4
+4 5 6 7
+1 3 5 7
+1 2 3 4
+4 5 6 7
+1 3 5 7
+Expected Output:
+
+-9 -8 -7 -6
+-6 -5 -4 -3
+-9 -7 -5 -3
+```
+public class Main {
+
+    public static void main(String[] args) {
+        int[][] a = {
+                {1,2,3,4},
+                {4,5,6,7},
+                {1,3,5,7}
+        };
+        reduce10(a);
+        //print the elements from new array
+    }
+    public static int[][] reduce10(int[][] a){
+        //int[][] b= new int[3][4];
+        for(int i=0; i<a.length; i++){
+            for(int j=0; j<a[i].length; j++){
+                //b[i][j]=;
+                System.out.print(a[i][j]-10+" ");
+            }
+            System.out.println("");
+        }
+        return a;
+    }
+}
+```
+
+133
+Create a static method with the following specs:
+
+Returns:
+
+an integer
+an integer
+Name:
+
+countA
+countA
+Parameters:
+
+a String called s
+a String called s
+Purpose:
+
+count the number of occurrences of 'a' or 'A' within s
+count the number of occurrences of 'a' or 'A' within s
+Examples:
+
+countA("aaa") ==> 3
+countA("aaa") ==> 3
+countA("aaBBdf8k3AAadnklA") ==> 6
+
+
+```
+public class Main {
+    public static int countA(String s) {
+        int count = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == 'a' || s.charAt(i) == 'A')
+                count++;
+        }
+        return count;
+    }
+    public static void main(String[] args) {
+        System.out.println(countA("aaA")); //3
+        System.out.println(countA("aaBBdf8k3AAadnklA")); //6
+    }
+}
+```
+
+
+134
+```
+public class Main {
+    public static int countVowels(String s) {
+        int count = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == 'a' || s.charAt(i) == 'e' ||
+                    s.charAt(i) == 'i' || s.charAt(i) == 'o' || s.charAt(i) == 'u')
+                count++;
+        }
+        return count;
+    }
+    public static void main(String[] args) {
+        System.out.println(countVowels("obama")); //3
+        System.out.println(countVowels("happy friday! i love weekends")); //9
+    }
+}
+```
+
+```
+static int countVowels(String s)
+{
+    int a=(s.length())-(s.toLowerCase().replaceAll("[aeiou]","").length());
+    return a;
+}
+```
+135
+Write a method with the following specs:
+
+Returns: a String
+Name: surround
+Parameters: a String called s
+a String called search_term
+Then complete the method by programming the following behavior
+
+Return a new String built from s that has every instance of the search term surrounded by parentheses
+See below examples.
+Examples:
+
+surround("abcabcabc",'c') ==> "ab(c)ab(c)ab(c)"
+surround("technology",'o') ==> "techn(o)l(o)gy"
+
+```
+public class Main {
+    static String surround(String s, String search_term) {
+        String s1 = s.replace(search_term, "("+search_term+")");
+        return s1;
+    }
+    public static void main(String[] args) {
+        System.out.println(surround("abcabcabc","c")); //"ab(c)ab(c)ab(c)"
+        System.out.println(surround("technology","o")); //"techn(o)l(o)gy"
+    }
+}
+```
+
+
+---
+Access modifiers:
+availability/accesibility can be controlled for variables, methods, classes
+
+4 types of access:
+private
+protected - used in protected class
+public - access by all.
+default(when no keyword is used, java use it)
+
+136
+For you to do:
+Please create methods with different access modifiers (one for each access modifier) and call them properly in main method one by one
+In each method write the logic accordingly like for private method write the logic in the println Statement as "This is Private Method" accordingly for rest of the methods that have different access modifiers should be a total of 4 outputs, please make sure they are in the same order that is printed below.
+Expected Output:
+This is Private Method
+This is Default Method
+This is Protected Method
+This is Public Method
+
+```
+private void privateMethod(){
+    System.out.println("This is Private Method");
+}
+void dMethod(){
+    System.out.println("This is Default Method");
+}
+protected void protectedMethod(){
+    System.out.println("This is Protected Method");
+}
+public void publicMethod(){
+    System.out.println("This is Public Method");
+}
+
+public static void main(String[] args) {
+    Main m = new Main();
+    m.privateMethod();
+    m.dMethod();
+    m.protectedMethod();
+    m.publicMethod();
+}
+```
+
+
+137
+For you to do
+In main class please declared the variables using different access modifiers that will hold value for:
+- name
+- city
+- name of the school
+- batch number
+Create a method to display details in following format:
+My name is ___ and I live in ___. I study at ___ in batch ___
+Assign values to the variables and execute method display
+Expected Output:
+My name is John and I live in Miami. I study at Syntax in batch 9
+
+```
+private String name;
+public String city;
+protected String school;
+private static int batchNumber;
+void displayInfo(String name, String city, String school, int batchNumber){
+    System.out.println("My name is "+ name + " and I live in " + city+ ". I study at "
+            + school + " in batch "+ batchNumber);
+}
+public static void main(String[] args) {
+
+    Main m = new Main();
+    m.displayInfo("John", "Miami", "Syntax", 9);
+}
+```
+
+
+138
+For you to do:
+In AnotherClass declare a private, default, protected, public methods and have them each return the name of the what access modifier they are using.
+All methods should be accessible by class name
+Call methods of Another class inside Main class
+Expected Output:
+default
+protected
+public
+
+```
+class AnotherClass {
+    private void pMethod() {
+        System.out.println("private");
+    }
+    void dMethod(){
+        System.out.println("default");
+    }
+    protected void prMethod(){
+        System.out.println("protected");
+    }
+    public void pbMethod(){
+        System.out.println("public");
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        AnotherClass ac = new AnotherClass();
+        ac.dMethod();
+        ac.prMethod();
+        ac.pbMethod();
+    }
+}
+```
+
+139 ( Don't understand how it is working)
+
+```
+class Main {
+    public static String alphabetical(String str){
+        String input = Character.toString(str.charAt(0));
+        for (int i = 1; i < str.length(); i++) {
+            char a = str.charAt(i -1);
+            char b = str.charAt(i);
+            if(a < b){
+                input += (b);
+            }
+        }
+        return input;
+    }
+    public static void main(String[] args){
+        System.out.println(alphabetical("hello"));
+        System.out.println(alphabetical("software"));
+        System.out.println(alphabetical("language"));
+    }
+}
+```
+
+140
+For you to do:
+Create the maxLength method that will accept String array of words and return the word with the largest length.
+Method should visible only within same package!
+Expected Output:
+this is long
+
+```
+public class Main {
+    public static void main(String[] args) {
+        String[] arr = {"hey", "yolo", "hi", "this is long"};
+        System.out.println(maxLength(arr));
+        //should print "this is long"
+    }
+    static String maxLength(String[] myArr) {
+        String maxString = "";
+        for (String s : myArr) {
+            if (s.length() > maxString.length()) {
+                maxString = s;
+            }
+        }
+        return maxString;
+    }
+}
+```
+
+141
+For you to do: Create the maxValue method that will accept int array
+and return return the maximum value in the array.
+Method should visible every class in any package!
+Expected Output:
+22
+
+```
+class Main {
+    public static void main(String[] args) {
+        int[] arr = {5, 12, -3, 7, 3, 22};
+        System.out.println(maxValue(arr)); //should print 22
+    }
+    public static int maxValue(int[] myArr) {
+        int max = myArr[0];
+        for (int i : myArr) {
+            if (i > max) {
+                max = i;
+            }
+        }
+        return max;
+    }
+}
+```
+
+---
+Constructor:
+
+142
+1. Complete the SyntaxTechnologies class:
+Include the following class variables:
+schoolName(String)
+batch(int)
+year(int)
+lastDayOfClass(String)
+Write two constructors:
+non-argument constructor
+parameterized constructor
+
+Create method to display values of instance variables.
+
+2. In Main Class:
+Create two different objects of the SyntaxTechnologies class using both constructors and call display method.
+Expected Output:
+null 0 0 null
+Syntax 6 2020 07/30/2020
+
+```
+class SyntaxTechnologies{
+    String schoolName;
+    int batch;
+    int year;
+    String lastDayofClass;
+
+    SyntaxTechnologies(){ //non argumant constructor
+    }
+    SyntaxTechnologies(String schoolName, int batch, int year, String  lastDayofClass){
+        this.schoolName = schoolName;
+        this.batch = batch;
+        this.year = year;
+        this.lastDayofClass = lastDayofClass;
+    }
+    void display(){
+        System.out.println(schoolName+" "+batch+" "+year+" "+lastDayofClass);
+    }
+}
+
+```
+
+```
+public class Main {
+    public static void main(String[] args) {
+        SyntaxTechnologies st = new SyntaxTechnologies();
+        st.display();
+        SyntaxTechnologies st2 = new SyntaxTechnologies("Syntax", 6, 2020, "07/30/2020");
+        st2.display();
+    }
+}
+```
+
+
+143
+
+```
+class Car {
+    String make;
+    String model;
+    int numberOfDoors;
+    int topSpeed;
+    double price;
+
+    Car(String make,String model,int numberOfDoors){
+        this.make=make;
+        this.model=model;
+        this.numberOfDoors=numberOfDoors=4;
+        topSpeed=90;
+        this.price=0;
+    }
+    Car(int numberOfDoors,int topSpeed,double price){
+        model="unknown";
+        make="unknown";
+        this.numberOfDoors=numberOfDoors;
+        this.topSpeed=topSpeed;
+        this.price=price;
+    }
+    Car(String make,String model,int topSpeed,double price){
+        this.make=make;
+        this.model=model;
+        numberOfDoors=4;
+        this.topSpeed=topSpeed;
+        this.price=price;
+    }
+    Car(String make,String model,int numberOfDoors,int topSpeed,double price)
+    {
+        this(make,model,topSpeed,price);
+        this.numberOfDoors=numberOfDoors;
+        this.price=30000;
+    }
+    void display(){
+        System.out.println(make+" "+model+" "+numberOfDoors+" "+topSpeed+" "+price);
+    }
+}
+
+
+
+public class Main {
+      public static void main(String[] args) {
+        Car car1 = new Car("Toyota", "Prius", 4, 120, 30000);
+        car1.display();
+        Car car2 = new Car("Toyota", "Prius", 4, 120, 30000);
+        car2.display();
+        Car car3 = new Car(4, 120, 30000);
+        car3.display();
+        Car car4 = new Car("Toyota", "Prius", 90);
+        car4.display();
+    }
+}
+```
+
+
+144
+```
+class StoreProduct{
+    String lable;
+    double price;
+    String category;
+    boolean hasExpiration;
+    int stock;
+
+    StoreProduct(String lable, double price, String category, boolean hasExpiration, int stock){
+        this.lable=lable;
+        this.price=price;
+        this.category=category;
+        this.hasExpiration=hasExpiration;
+        this.stock=stock;
+    }
+    StoreProduct(String lable, double price, int stock){
+        this.lable=lable;
+        this.price=price;
+        this.stock=stock;
+        this.category="misc";
+        this.hasExpiration=false;
+    }
+    StoreProduct(String lable, double price){
+        this.lable=lable;
+        this.price=price;
+        this.stock=0;
+        this.hasExpiration=false;
+    }
+
+    public void display(){
+        System.out.println(lable +" "+ price +" "+ category +" "+ hasExpiration +" "+ stock);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        StoreProduct sp1 = new StoreProduct("Eggs", 3, "Produce", true, 10);
+        sp1.display();
+        StoreProduct sp2 = new StoreProduct("Paper Towels", 2, 24);
+        sp2.display();
+        StoreProduct sp3 = new StoreProduct("Paper Towels", 2);
+        sp3.display();
+    }
+}
+```
+
+
+---
+This Keyword:
+
+145
+Complete the Dog.java class:
+Create following class variables.
+
+dogName
+dogWeight
+static dogBreed=Mutt;
+
+For all methods and variables use proper naming convention.
+Create constructor to initialize instance variables
+In Main class Create 2 Objets of a Dog class and using each object reference variable print details of objects.
+Expected Output:
+
+Tarzan Mutt 50.0
+Lucy Mutt 10.0
+
+
+
+```
+class Dog{
+    String dogName;
+    double dogWeight;
+    static String dogBreed = "Mutt";
+
+    public Dog(String dogName, String dogBreed, double dogWeight) {
+        this.dogName = dogName;
+        this.dogWeight = dogWeight;
+    }
+    void printInfo(){
+        System.out.println(dogName+" "+dogBreed+" "+dogWeight);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog d1 = new Dog("Tarzan", "Mutt", 50);
+        d1.printInfo();
+        Dog d2 = new Dog("Lucy", "", 10);
+        d2.printInfo();
+
+    }
+}
+```
+
+
+146
+Complete the Employee.java class:
+Include the following class variables:
+
+name(String), lastName(String), employeeId(int),
+startDate(String), salary(int)
+
+Write two constructors:
+non-argument constructor
+parameterized constructor that will initialize all instance variables
+Create two different objects of the Employee class using both constructors and print
+the values of the properties inline using a print method.
+Output:
+null null 0 null 0
+null null 0 null 0
+Joe Smith 12345 01/01/1970 35000
+
+```
+class Employee{
+    String name;
+    String lastName;
+    int employeeId;
+    String startDate;
+    int salary;
+    public Employee(String name, String lastName, int employeeId, String startDate, int salary) {
+        this.name = name;
+        this.lastName = lastName;
+        this.employeeId = employeeId;
+        this.startDate = startDate;
+        this.salary = salary;
+    }
+    Employee(){
+
+    }
+    void print(){
+        System.out.println(name + " "+ lastName+ " "+employeeId+ " "+ startDate+ " "+ salary);
+    }
+
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Employee employee = new Employee();
+        employee.print();
+        Employee employee1 = new Employee("Joe", "Smith", 12345, "01/01/1970", 35000);
+        employee1.print();
+    }
+}
+```
+
+
+147
+In carObject class:
+Create instance variables as below.
+model
+price,
+quantity
+Create a constructor that will initialize instance variables.
+Create a method with name carStockValue. Write logic to calculate the
+total values of cars in stock and print the result.
+run the application in Main Class
+
+Expected Output:
+Toyota 2019 Stock Value 2500000.0
+BMW 2019 Stock Value 652980.0
+Toyota 2019 Stock Value 2500000.0
+BMW 2019 Stock Value 652980.0
+Assignment Goal. Clean Code, This Keyword, Method Creation, Mathematic Operations.
+
+```
+class CarObjects{
+    String model;
+    double price;
+    int quantity;
+
+    CarObjects(String model, double price, int quantity){
+        this.model = model;
+        this.price = price;
+        this.quantity = quantity;
+    }
+    void carStockValue(){
+        double totalValue = price * quantity;
+        System.out.println(model + " 2019 Stock Value " + totalValue);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        CarObjects toyota = new CarObjects("Toyota", 2500, 1000);
+        CarObjects bmw = new CarObjects("BMW", 6529.8, 100);
+        toyota.carStockValue();
+        bmw.carStockValue();
+    }
+}
+```
+
+148 (did not understand)
+
+In ShoppingStore class:
+Create variables as below.
+item,
+price,
+quantity
+Create a constructor to initialize instance variables
+Create a method with name itemTotalPrice.
+write a logic to to calculate the total values of items in stock. and print the result.
+return the total value.
+
+In Main Class.
+Create two Object of ShoppingStore and pass the parameters to Constructor.
+then using each object call the method itemTotalPrice.
+Store the returned value of each object.
+Calculate sum of both object and print the result.
+Output:
+Blanket Total Value 99.98
+Blanket Total Value 99.98
+Mattress Total Value 439.18
+Mattress Total Value 439.18
+You purchased 539.16 Today
+
+```
+class ShoppingStore{
+    String item;
+    double price;
+    int quantity;
+    double calc;
+
+    public ShoppingStore(String item, double price, int quantity) {
+        this.item = item;
+        this.price = price;
+        this.quantity = quantity;
+        this.calc= quantity * price;
+    }
+    void itemTotalPrice () {
+        System.out.println(item + " Total Value " + calc );
+    }
+}
+
+
+class Main {
+    public static void main(String[] args) {
+        ShoppingStore obj1= new ShoppingStore ("Blanket", 49.99, 2 );
+        obj1.itemTotalPrice();
+        ShoppingStore obj2= new ShoppingStore ("Mattress", 439.18, 1 );
+        obj2.itemTotalPrice();
+        System.out.println("You purchased " + (obj1.calc + obj2.calc) + " Today");
+    }
+}
+```
+
+
+---
+Iheritance:
+
+149
+Create Three classes (Main, A, B):
+Have a method that prints out the following
+For A: "Class A"
+For B: "Class B"
+Make B extend A
+
+From your Main class create an object of the B class and call the methods.
+Output:
+Class A
+Class A
+Class B
+
+```
+class A{
+     A(){
+        System.out.println("Class A");
+    }
+}
+class B extends A{
+     B(){
+        System.out.println("Class B");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        B b = new B();
+    }
+}
+```
+
+150
+```
+class Person {
+    String name;
+    String lastName;
+    int age;
+    Person(String name, String lastName, int age) {
+        this.name = name;
+        this.lastName = lastName;
+        this.age = age;
+    }
+}
+class Employee extends Person {
+    int salary;
+    Employee(String name, String lastName, int age) {super(name, lastName, age);}
+    Employee(String name, String lastName, int age, int salary) {
+        super(name, lastName, age);
+        this.salary = salary;
+    }
+    void print() {System.out.println(name + " " + lastName + " " + age + " " + salary);}
+}
+class Student extends Employee {
+    int grade;
+    Student(String name, String lastName, int age) {super(name, lastName, age);}
+    Student(String name, String lastName, int age, int grade) {
+        super(name, lastName, age);
+        this.grade = grade;
+    }
+    void print() {System.out.println(name + " " + lastName + " " + age + " " + grade);}
+}
+class Retiree extends Student {
+    String seniorActivity;
+    Retiree(String name, String lastName, int age, String seniorActivity) {
+        super(name, lastName, age);
+        this.seniorActivity = seniorActivity;
+    }
+    void print() {System.out.println(name + " " + lastName + " " + age + " " + seniorActivity);}
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Employee emp = new Employee("Joe", "Smith", 35, 35000);
+        emp.print();
+        Student st = new Student("Adam", "Smith", 15, 10);
+        st.print();
+        Retiree ret = new Retiree("Frank", "Smith", 15, "tour");
+        ret.print();
+    }
+}
+```
+
+---
+Method Overloading:
+159 (did not understand)
+
+```
+class Main {
+    private void subtract(int num1,int num2, int num3, int num4) {
+        int sum = num1 - num2 - num3 - num4;
+        System.out.println(sum + " (should come from subtracting 4 numbers)");
+    }
+    private void subtract(int num1,int num2, int num3) {
+        int sum = num1 - num2 - num3;
+        System.out.println(sum + " (should come from subtracting 3 numbers)");
+    }
+    private void subtract(int num1,int num2) {
+        int sum = num1 - num2;
+        System.out.println(sum + " (should come from subtracting 2 numbers)");
+    }
+    public static void main(String[] args) {
+        Main obj = new Main();
+        obj.subtract(20,100, -140, 20);
+        obj.subtract(20,90, -100);
+        obj.subtract(20,0);
+    }
+}
+```
+
+151
+```
+class Method{
+    static int sum2d(int[][] arr){
+        int sum=0;
+        for(int[] i:arr){
+            for(int j : i){
+                sum+=j;
+            }
+        }
+        return sum;
+    }
+}
+
+public class Main extends Method{
+    public static void main(String[] args) {
+        int[][] a = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+        };
+        System.out.println(Method.sum2d(a));
+    }
+}
+```
+
+
+---
+Supper keyword
+152
+In Parent class.
+Create a constructor, it will take a String parameter called city.
+include the logic of printing the parameter value.
+Create another constructor without parameter.
+Include the logic of printing "Parent Constructor".
+Create a Child Class that should be a subclass of Parent class
+Inside child class create a constructor that will make a call to parameterized constructor of the parent class.
+In Main class.
+Create an Object of the child class by passing String value "Vienna"
+Expected Output:
+Vienna
+
+```
+class Parent{
+    Parent(String city){
+        System.out.println(city);
+    }
+    Parent(){
+        System.out.println("Parent Constructor");
+    }
+}
+class Child extends Parent{
+    Child(String city){super(city);}
+}
+public class Main {
+    public static void main(String[] args) {
+        Child obj = new Child("Vienna");
+    }
+}
+```
+
+
+---
+Method Overloading:
+
+159
+
+160
+For you to do:
+Overload instance method display by having different types of parameters
+Inside each method write the logic to print value of the parameter
+Call all methods inside your main method
+Expected Output:
+
+100
+100
+Syntax Technologies
+Syntax Technologies
+100.09
+
+```
+class Main {
+    static void display(int num){
+        System.out.println(num);
+    }
+    static void display(String myString){
+        System.out.println(myString);
+    }
+    static void display(double num){
+        System.out.println(num);
+    }
+    public static void main(String[] args){
+        display(100);
+        display("Syntax Technologies");
+        display(100.09);
+    }
+}
+```
+
+163
+In Parent Class create a method with name method() that will print "Parent method"
+Override method() in Child class that will print "Child method"
+In Main Class create objects of child and parent class and call its method.
+Expected Output:
+Parent method
+Child method
+
+```
+class Parent{
+    void method(){System.out.println("Parent method");}
+}
+class child extends Parent{
+    @Override
+    void method(){System.out.println("Child method");}
+}
+
+class Main {
+    public static void main(String[] args){
+        Parent parent = new Parent();
+        parent.method();
+        child ch = new child();
+        ch.method();
+    }
+}
+```
+
+
+164
+Create a method hello() in parent class that will print "method in Parent class" then override that method is 3 Subclasses implementing login to print "method in Child1/Child2/Child3 class"
+
+In Main Class create 3 object of the child classes and store in into an array and call method hello():
+Expected Output:
+method in Child1 class
+method in Child2 class
+method in Child3 class
+
+```
+class Parent{
+    void hello(){
+        System.out.println("method in Parent class");
+    }
+}
+class Child1 extends Parent{
+    @Override
+    void hello(){
+        System.out.println("method in Child1 class");
+    }
+}
+class Child2 extends Parent{
+    void hello(){
+        System.out.println("method in Child2 class");
+    }
+}
+class Child3 extends Parent{
+    void hello(){
+        System.out.println("method in Child3 class");
+    }
+}
+
+class Main {
+    public static void main(String[] args){
+        Child1 child1 = new Child1();
+        child1.hello();
+        Child2 child2 = new Child2();
+        child2.hello();
+        Child3 child3 = new Child3();
+        child3.hello();
+    }
+}
+```
+
+165
+Parent class create 4 methods with different level of access modifiers. In each method print "I am parent public/protected/default/private method".
+Override methods in child class
+In Main Class create object of the child class and see which methods are available
+Expected Output:
+I am a child public method
+I am a child protected method
+I am a child default method
+
+```
+class Parent{
+    void method(){System.out.println("I am parent default method");}
+    void publicMethod(){System.out.println("I am parent public method");}
+    void protectedMethod(){System.out.println("I am parent protected method");}
+    void privateMethod(){System.out.println("I am parent private method ");}
+}
+class Child extends Parent{
+    @Override
+    void method(){System.out.println("I am a child default method");}
+    @Override
+    void publicMethod(){System.out.println("I am a child public method");}
+    @Override
+    void protectedMethod(){System.out.println("I am a child protected method");}
+    @Override
+    void privateMethod(){System.out.println("I am a child private method ");}
+}
+
+class Main {
+    public static void main(String[] args) {
+
+        Child child = new Child();
+        child.method();child.publicMethod();child.protectedMethod();child.privateMethod();
+    }
+}
+```
+
+166
+```
+class Animal {
+    String animal;
+    Animal(String animal){
+        this.animal=animal;
+    }
+    void eat(){
+        System.out.println(this.animal+" eats");
+    }
+    void sleep(){
+        System.out.println(this.animal+" sleeps a lot");
+    }
+}
+class Cat extends Animal{
+    Cat(String cat){
+        super(cat);
+    }
+    void eat(){
+        System.out.println(animal+" eats");
+    }
+    void sleep(){
+        System.out.println(animal+" sleeps a lot");
+    }
+}
+class Kitten1 extends Cat{
+    Kitten1(String kitten1){
+        super(kitten1);
+    }
+    void eat(){
+        System.out.println(animal+" eats milk");
+    }
+}
+class Kitten2 extends Cat{
+    Kitten2(String kitten2){
+        super(kitten2);
+    }
+    void eat(){
+        System.out.println(animal+" eats snacks");
+    }
+}
+class Kitten3 extends Cat{
+    Kitten3(String kitten3){
+        super(kitten3);
+    }
+    void eat(){
+        System.out.println(animal+" eats everything");
+    }
+}
+
+class Main {
+    public static void main(String[] args){
+        Animal [] cats= new Animal[4];
+        cats[0] =new Cat("Cat");
+        cats[1]= new Kitten1("kitten1");
+        cats[2]= new Kitten2("kitten2");
+        cats[3]= new Kitten3("kitten3");
+        for(Animal cat: cats){
+            cat.eat();
+            cat.sleep();
+        }
+    }
+}
+```
+
+
+---
+Final keyword: (167 - 170)
+167
+
+
+
+
+
+---
+Abstract Class: (171 - 173)
+171
+
+
+
+
+
+---
+Interface: (174 - 177)
+174
+
+
+
+
+
+
+
+---
+Encapsulation:  (178 - 182)
+178
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+List: (183 - 194)
+
+183
+
+
+
+
+---
+Set: (195 - 199)
+195
+
+End

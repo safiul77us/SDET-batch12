@@ -1,2 +1,4 @@
-package com.syntax.class29;public class Task2 {
+package com.syntax.class29;
+
+public class Task2 {
 }
